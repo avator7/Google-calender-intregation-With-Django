@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="mx-5">
+      
+        <form action="/" method="POST">
+        {% csrf_token %}
+        <button type="submit" class="btn btn-primary">Click here to refresh the page</button>
+        
+        {% csrf_token %}
+        </form>
+    </div>
+    {% if flow %}
+      <a href="{{flow}}" class="btn btn-dark mx-5 my-3">click here to authorize</a>
+    {% else %}
+      <h1>LIST OF ALL EVENTS</h1>
+    {% endif %} 
+    
+    {% for i in events %}
+    <div class="conta mx-5">
+      <h5>{{forloop.counter}} . {{i.summary}}</h5>
+    </div>
+    {% endfor %}
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body>
+</html>
