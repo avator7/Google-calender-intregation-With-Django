@@ -7,7 +7,8 @@ In This application i got to know about google integration with python i have us
 This modules are google provided standard library for more information you read this documentation https://developers.google.com/calendar/api/v3/reference
 
 I have intregated through Django app and It return all the listed events When user authorize
-Note:- You can only authorize if you are test your. I mean i have to add you as test user using google cloud console for acessing this application
+
+Note:- google only allow users to authorize if the developer added users in  test user at google cloud console.
 
 My app screen has two Button on home one to refresh another to authorize:-
 ![Screenshot (4)](https://user-images.githubusercontent.com/74177655/178114215-d4acd71e-0436-4589-8bef-ae7652ec9300.png)
