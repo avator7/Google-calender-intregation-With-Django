@@ -2,6 +2,7 @@
 Hi All
 In This application i got to know about google integration with python i have used 2 modules by google are:-
 1.google-apis-oauth-django 
+
 2.google-api-python-client
 This modules are google provided standard library for more information you read this documentation https://developers.google.com/calendar/api/v3/reference
 
