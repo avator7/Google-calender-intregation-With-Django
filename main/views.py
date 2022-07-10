@@ -22,6 +22,7 @@ JSON_FILEPATH = os.path.join(os.getcwd(), 'client_secret_503635821248-hkfsriho2h
 REDIRECT_URI = 'http://localhost:8000/google_oauth/callback/'
 
 
+
 def home(request):
     flow = InstalledAppFlow.from_client_secrets_file("client_secret_503635821248-hkfsriho2hdfjkm6ein3ejkncjr8enqr.apps.googleusercontent.com.json", scopes=SCOPES)
     oauth_url = google_apis_oauth.get_authorization_url(
