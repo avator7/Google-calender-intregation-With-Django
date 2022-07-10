@@ -1,12 +1,8 @@
 # from asyncio import exceptions
-from asyncio import events
 import datetime
-import re
-from turtle import st
 from django.shortcuts import render, HttpResponseRedirect, redirect
 import google_apis_oauth
 import os
-import google_apis_oauth
 from googleapiclient.discovery import build
 
 from  django.core import exceptions 
@@ -57,7 +53,7 @@ def CallbackView(request):
         
         
     except:
-        return redirect("event")
+        return redirect("home")
         
 
         
